@@ -4,5 +4,5 @@
 	branch = feature/optimized-relations-including-optional-oneShot-behavior
 [submodule "vi"]
 	path = vi
-	url = git@github.com:viur-framework/vi.git
+	url = https://github.com/viur-framework/vi.git
 	branch = develop
