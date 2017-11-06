@@ -1,0 +1,10 @@
+*.pyc
+js_foo/*.js
+js_foo/node_modules
+js_foo/testing.js.map
+js_foo/package-lock.json
+.idea
+storage
+credentials.ini
+appengine/server
+appengine/vi

@@ -1,0 +1,39 @@
+runtime: python27
+api_version: 1
+instance_class: F4
+threadsafe: False
+default_expiration: "10s"
+
+handlers:
+- url: /vi/s
+  static_dir: vi
+- url: /static
+  static_dir: static
+- url: /resources
+  static_dir: server/resources
+- url: /favicon.ico
+  static_files: server/resources/meta/favicon.ico
+  mime_type: image/x-icon
+  upload: server/resources/meta/favicon.ico
+- url: /_tasks
+  script: testcase-viur.application
+- url: /admin/user/getAuthMethod
+  script: testcase-viur.application
+- url: /admin/.*
+  script: testcase-viur.application
+- url: /vi.*
+  script: testcase-viur.application
+- url: /.*
+  script: testcase-viur.application
+
+libraries:
+- name: jinja2 
+  version: latest
+- name: pytz
+  version: latest
+
+inbound_services:
+- warmup
+
+builtins:
+- deferred: on
