@@ -67,16 +67,16 @@ you should see something like that:
 	Check if updateSearchIndex updates testUser3 and testUser4 in viur_relations and report for multiple relational bones ... ok
 	
 	----------------------------------------------------------------------
-	Ran 15 tests in 37.590s
+	Ran 15 tests in 105.081s
 	
 	OK
 
 
 ### Contribution guidelines ###
 
-Please implement testcases for each bone and its features. Group them as stacked testsuites as in viur_relations.update_leve
+Please implement testcases for each bone and its features. Group them as stacked testsuites as in tests.viur_relations.update_level
 
 
 ### Who do I talk to? ###
 
-* coding: sk@mausbrand.de
+* coding: https://github.com/skoegl
